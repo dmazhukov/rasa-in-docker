@@ -1,0 +1,4 @@
+FROM rasa
+EXPOSE 5005
+ADD . .
+CMD ["rasa", "run", "--cors", "'*'", "--enable-api", "--debug"]
