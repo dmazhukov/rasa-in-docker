@@ -16,8 +16,8 @@ $ docker build -t pyrasa .
 $ docker run -p 5005:5005 pyrasa rasa run --cors '*' --enable-api --debug
 ```
 
-Optionally possible to build *Dockerfile.rasa* and use official Rasa base image.
+Optionally possible to build `Dockerfile.rasa` and use official Rasa base image.
 
 ## Deployment to ECS
 
-TBD
+Please use `rasa-run-ecs.json` and modify it accordingly.
