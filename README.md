@@ -20,4 +20,8 @@ Optionally possible to build `Dockerfile.rasa` and use official Rasa base image.
 
 ## Deployment to ECS
 
-Please use `rasa-run-ecs.json` and modify it accordingly.
+1. Please use `rasa-run-ecs.json` and modify it accordingly.
+2. Remember to open ports 80, 443 and 5005 in AWS security group assigned to ECS task.
+3. Go to https://ydns.io and register subdomain pointing to ECS task endpoint IP.
+4. Modify `rasa/Caddyfile` with your subdomain name
+5. Build and push docker image
